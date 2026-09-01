@@ -286,7 +286,7 @@ class Game:
 
     def update(self):
         self.current_time = pygame.time.get_ticks()
-        keys = pygame.get_pressed()
+        keys = pygame.key.get_pressed()
         self.player.move(keys, self.platforms)
 
         # Update monsters
